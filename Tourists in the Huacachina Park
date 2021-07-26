@@ -1,0 +1,13 @@
+S = V = 0
+while True:
+    list1 = list(map(str,input().split()))
+    if list1[0]=="ABEND":
+        break
+    elif list1[0]=='SALIDA':
+        S = S + int(list1[1])
+        V = V+1
+    else:
+        S = S - int(list1[1])
+        V = V - 1
+print(S)
+print(V)
